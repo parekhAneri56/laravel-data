@@ -7,7 +7,7 @@ use Illuminate\Notifications\Notifiable;
 
 class RegisterModel extends Model
 {
-    use HasFactory;
+    use HasFactory,Notifiable;
     protected $fillable = [
 'customers_name','email','mobile','password','DOB','address'
     ];
